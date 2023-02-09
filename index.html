@@ -1,0 +1,66 @@
+<meta name="viewport"content="width=device-width, initial-scale=1">
+
+<div>
+	
+	<p id="desc">
+		<b>Code by Homei JC</b>
+	</p>
+	
+	<p>
+		<input id="inptTxtColor"type="text"placeholder="Type any color here...">
+	</p>
+	
+	<button onclick="doFunc()">
+		<b>Do Function</b>
+	</button>
+	
+</div>
+
+<style>
+	
+	*
+	{
+		box-sizing: border-box;
+	}
+	body
+	{
+		place-items: center;
+		display: grid;
+		height: 95vh;
+	}
+	div
+	{
+		text-align: center;
+	}
+	#desc
+	{
+		color: #0000ff;
+	}
+	#inptTxtColor
+	{
+		text-transform: uppercase;
+		text-align: center;
+		outline: none;
+		height: 30px;
+		width: 160px;
+	}
+	button
+	{
+		height: 30px;
+		width: 100px;
+	}
+	
+</style>
+
+<script>
+	
+	function doFunc()
+	{
+		const inpt = document.querySelector('#inptTxtColor').value;
+	
+	const text = document.querySelector('#desc');
+	
+	document.querySelector('#desc').style.color = inpt;
+	}
+	
+</script>
